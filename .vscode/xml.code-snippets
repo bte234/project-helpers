@@ -1,0 +1,6 @@
+{
+    "xml version": {
+        "prefix": "xv",
+        "body": "<?xml version=\"$1\" encoding=\"$2\"?>",
+    }
+}
