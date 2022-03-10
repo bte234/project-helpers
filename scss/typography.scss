@@ -1,0 +1,40 @@
+// default styling for general text, such as <p>, <span> or <li>
+* {
+  font-size: var(--text-font-size);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+// header stylings
+h1 {
+  font-size: var(--h1-font-size);
+  color: var(--header-color);
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: var(--h2-font-size);
+  color: var(--header-color);
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: var(--h3-font-size);
+  color: var(--header-color);
+  line-height: 1.2;
+}
+
+h4 {
+  font-size: var(--h4-font-size);
+  color: var(--header-color);
+  line-height: 1.1;
+}
+
+// anchor tag styling
+a {
+  color: var(--link-color);
+  
+  &:hover {
+    color: var(--link-color-hover);
+  }
+}
