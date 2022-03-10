@@ -1,0 +1,17 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+
+<extension type = "module" version = "3.1.0" client = "site" method="upgrade">
+
+    <name>MOD_BOILERPLATE_TITLE</name>
+    <author>Harry Nguyen</author>
+    <version>1.0.0</version>
+    <description>MOD_BOILERPLATE_DESCRIPTION</description>
+
+    <files>
+        <filename>mod_boilerplate.xml</filename>
+        <filename module = "mod_boilerplate">mod_boilerplate.php</filename>
+        <filename>index.html</filename>
+        <filename>helper.php</filename>
+        <folder>tmpl</folder>
+    </files>
+</extension>
