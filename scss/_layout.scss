@@ -1,0 +1,6 @@
+
+// styling for a container with defined width and stays in center of parent's width
+@mixin container {
+  width: var(--container-width);
+  margin-inline: auto;
+}
