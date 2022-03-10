@@ -1,1 +1,7 @@
+// Main scss file
 
+// TODO: check out @use to replace @import
+
+@import "_settings.scss";
+@import "typography.scss";
+@import "animations.scss";
