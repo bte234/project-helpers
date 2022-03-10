@@ -1,0 +1,105 @@
+{
+    "php Tag": {
+        "prefix": "php",
+        "description": "Creates a php tag",
+        "body": [
+            "<?php",
+            "$1",
+            "?>"
+        ]
+    },
+    "php inline": {
+        "prefix": "pi",
+        "description": "Creates a php tag inline",
+        "body": [
+            "<?php $1 ?>"
+        ]
+    },
+    "JEXEC Or Die": {
+        "prefix": "jxc",
+        "body": [
+            "defined('_JEXEC') or die('Restricted Access');"
+        ]
+    },
+    "Controller extends JControllerLegacy": {
+        "prefix": "jcl",
+        "body": [
+            "class ${1:ControllerName} extends JControllerLegacy {", 
+            "\t$2", 
+            "}",
+        ]
+    },
+
+    "Controller extends JControllerAdmin": {
+        "prefix": "jca",
+        "body": [
+            "class ${1:ControllerName} extends JControllerAdmin {", 
+            "\t$2", 
+            "}",
+        ]
+    },
+
+    "Controller extends JControllerForm": {
+        "prefix": "jcf",
+        "body": [
+            "class ${1:ControllerName} extends JControllerForm {", 
+            "\t$2", 
+            "}",
+        ]
+    },
+
+    "Joomla Raise Errors": {
+        "prefix": "jre",
+        "body": [
+            "// Check for errors.",
+            "if (count(\\$error = \\$this->get('Errors'))) {",
+            "\tJError::raiseError(500, implode('<br/>', \\$errors));",
+            "\treturn false;",
+            "}",
+        ]
+    },
+    "View extends JViewLegacy": {
+        "prefix": "jvl",
+        "body": [
+            "class ${1:ViewName} extends JViewLegacy {", 
+            "\tfunction display(\\$tpl = null) {", 
+            "\t\t$2",  
+            "\t\tparent::display(\\$tpl)",
+            "\t}", 
+            "}",
+        ]
+    },
+
+    "Model extends JModelAdmin": {
+        "prefix": "jma",
+        "body": [
+            "class ${1:ModelName} extends JModelAdmin {",
+            "\t$2",
+            "}",
+        ]
+    },
+    "JText::_": {
+        "prefix": "jt",
+        "body": "JText::_($1)",
+    },
+    "JHtml::_": {
+        "prefix": "jhtml",
+        "body": "JHtml::_($1)",
+    },
+    "JRoute::_": {
+        "prefix": "jrt",
+        "body": "JRoute::_($1)",
+    },
+    "JToolbarHelper": {
+        "prefix": "jth",
+        "body": "JToolbarHelper::",
+    },
+    "JApplication": {
+        "prefix": "jfa",
+        "body": "JFactory::getApplication()",
+    },
+    "JDocument": {
+        "prefix": "jfd",
+        "body": "JFactory::getDocument()",
+    }
+}
