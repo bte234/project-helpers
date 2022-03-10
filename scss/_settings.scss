@@ -1,0 +1,90 @@
+// Initial setting config for scss
+// Most variables are defined as CSS variables instead of SCSS variables so they can be modified as needed down the line
+
+//Table of contents
+// 1. Global
+// 2. Breakpoint
+// 3. Typography
+
+
+// 1. Global
+// -------------------
+:root {
+  
+  // width for content container throughout the site to keep consistency
+  --container-width: min(90vw, 80rem);
+  
+  --white: #fff;
+  --black: #000;
+  
+  // color palette, usually used as accent colors
+  // --primary-color: 
+  // --secondary-color:
+}
+
+
+// 2. Breakpoints
+// -------------------
+
+// use scss variables as these don't need to be changed throughout the site
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+// mobile-first media queries
+@mixin sm {
+  @media (min-width: #{$sm}) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: #{$md}) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: #{$lg}) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: #{$xl}) {
+    @content;
+  }
+}
+
+// custom media query
+@mixin bp($size) {
+  @media (min-width: #{$size}) {
+    @content;
+  }
+}
+
+// 3. Typography
+// -------------------
+
+:root {
+  // header font size variables
+  --h1-font-size: 3rem;
+  --h2-font-size: 2.5rem;
+  --h3-font-size: 2rem;
+  --h4-font-size: 1.25rem;
+  
+  // usual text font size variable
+  --text-font-size: 1rem;
+  
+  // button font size variable
+  // sometimes button might use larger font size than text
+  --button-font-size: var(--text-font-size);
+  
+  // header and text color
+  --header-color: var(--black);
+  --text-color: var(--black);
+  
+  // anchor tag color, usually use primary color
+  --link-color: var(--black);
+}
